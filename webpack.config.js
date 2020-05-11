@@ -2,7 +2,10 @@ const path = require('path');
 const webpack = require('webpack');
 
 module.exports = {
-  entry: './src/index.js',
+  entry: {
+    index: './src/index.js',
+    debounce: './src/debounce.js'
+  },
   output: {
     path: path.join(__dirname, 'dist'),
     filename: '[name].js',
